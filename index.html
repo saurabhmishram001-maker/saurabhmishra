@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Saurabh Mishra — Data Analytics, MIS Reporting and Business Intelligence portfolio.">
+<title>Saurabh Mishra | Analytics Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#17202b;--muted:#637080;--paper:#f4f6f8;--white:#fff;--line:#dce2e8;--blue:#245eea;--pale:#eaf0ff;--green:#c7f36b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Manrope, sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}.shell{width:min(1160px,calc(100% - 44px));margin:auto}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:24px 0;border-bottom:1px solid var(--line)}
+.logo{font-size:15px;font-weight:800;letter-spacing:.08em}.logo span{color:var(--blue)}
+nav{display:flex;gap:25px;font-size:13px;font-weight:700;color:#536071}nav a:hover{color:var(--blue)}
+.hero{padding:86px 0 76px;display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center}
+.kicker{font:500 11px "DM Mono";letter-spacing:.12em;text-transform:uppercase;color:var(--blue)}
+h1,h2,h3,p{margin-top:0}h1{font-size:clamp(42px,6vw,76px);line-height:1.03;letter-spacing:-.065em;margin:18px 0 22px;font-weight:800}
+h1 em{font-style:normal;color:var(--blue)}.intro{max-width:610px;color:#596777;font-size:17px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.button{padding:12px 18px;border-radius:7px;font-size:13px;font-weight:800;display:inline-flex;align-items:center;gap:10px;border:1px solid var(--ink)}
+.button.fill{background:var(--ink);color:white}.button.outline{background:transparent}
+.hero-side{background:var(--ink);color:white;border-radius:18px;padding:27px;position:relative;overflow:hidden;min-height:310px}
+.hero-side:after{content:"";position:absolute;width:250px;height:250px;border:1px solid #ffffff26;border-radius:50%;right:-75px;top:-95px;box-shadow:0 0 0 28px #ffffff08,0 0 0 58px #ffffff06}
+.initials{width:66px;height:66px;background:var(--green);color:var(--ink);border-radius:14px;display:grid;place-items:center;font-size:23px;font-weight:800;position:relative;z-index:1}
+.hero-side h2{font-size:24px;margin:24px 0 3px;position:relative;z-index:1}.hero-side p{color:#b9c4d0;font-size:13px;position:relative;z-index:1}
+.quickfacts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:26px;position:relative;z-index:1}
+.quickfacts div{border-top:1px solid #ffffff35;padding-top:10px}.quickfacts strong{display:block;font-size:17px}.quickfacts small{color:#b9c4d0;font-size:10px;text-transform:uppercase;letter-spacing:.08em}
+section{padding:70px 0;border-top:1px solid var(--line)}.heading{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:28px}
+.heading h2{font-size:34px;letter-spacing:-.045em;margin:6px 0 0}.heading p{color:var(--muted);font-size:13px;max-width:430px;margin:0}
+.about{display:grid;grid-template-columns:1.3fr .7fr;gap:18px}.paper-card{background:white;border:1px solid var(--line);border-radius:13px;padding:25px}
+.paper-card h3{font-size:18px;margin-bottom:9px}.paper-card p{color:#657282;font-size:14px;margin-bottom:0}
+.mini-list{display:grid;gap:10px}.mini{background:#e9edf2;padding:15px;border-radius:10px}.mini b{display:block;font-size:14px}.mini span{color:var(--muted);font-size:12px}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.skill{background:white;border:1px solid var(--line);border-radius:13px;padding:21px}.skillno{font:500 11px "DM Mono";color:var(--blue)}.skill h3{font-size:18px;margin:13px 0 8px}.skill p{font-size:13px;color:var(--muted);margin:0}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}.pill{background:var(--pale);color:#234bb1;padding:5px 8px;border-radius:5px;font-size:10px;font-weight:700}
+.projectgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.project{background:white;border:1px solid var(--line);border-radius:13px;overflow:hidden}
+.projecttop{height:135px;background:#182432;color:white;padding:18px;display:flex;justify-content:space-between;align-items:end;position:relative}
+.projecttop:before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 35%,#245eea88)}.projecttop b,.projecttop span{position:relative;z-index:1}.projecttop b{font-size:24px;letter-spacing:-.05em}.projecttop span{font:11px "DM Mono";color:var(--green)}
+.projectbody{padding:19px}.projectbody h3{font-size:17px;margin-bottom:8px}.projectbody p{font-size:12px;color:var(--muted);min-height:62px}.projectbody .pills{margin:12px 0}
+.disclaimer{font-size:11px;color:#687585;background:#e9edf2;border-left:3px solid var(--blue);padding:12px 14px;margin-top:16px}
+.experience{display:grid;grid-template-columns:1fr 1fr;gap:15px}.job{background:white;border:1px solid var(--line);border-radius:13px;padding:22px}.jobhead{display:flex;justify-content:space-between;gap:12px;align-items:start}.job h3{font-size:18px;margin:5px 0}.date{font:11px "DM Mono";color:var(--blue);white-space:nowrap}.company{font-size:12px;color:var(--muted)}.job ul{padding-left:18px;color:#657282;font-size:12px;margin:16px 0 0}.job li{margin:7px 0}
+.edu{display:grid;grid-template-columns:1fr 1fr;gap:14px}.eduitem{background:white;border:1px solid var(--line);padding:18px;border-radius:11px}.eduitem b{display:block;font-size:14px}.eduitem span{color:var(--muted);font-size:12px}
+.contactbox{background:var(--blue);color:white;border-radius:16px;padding:34px;display:flex;justify-content:space-between;align-items:center;gap:20px}.contactbox h2{font-size:30px;letter-spacing:-.04em;margin:5px 0}.contactbox p{color:#dbe5ff;margin:0;font-size:13px}.contactbox .button{background:var(--green);border-color:var(--green);color:var(--ink);white-space:nowrap}
+footer{padding:25px 0;display:flex;justify-content:space-between;color:#7b8794;font-size:11px}
+@media(max-width:780px){.hero{grid-template-columns:1fr;padding:60px 0}.about{grid-template-columns:1fr}.skills,.projectgrid{grid-template-columns:1fr 1fr}.experience{grid-template-columns:1fr}.heading{display:block}.heading p{margin-top:10px}}
+@media(max-width:540px){.shell{width:min(100% - 30px,1160px)}nav{gap:12px;font-size:11px}nav a:nth-child(2){display:none}.skills,.projectgrid,.edu{grid-template-columns:1fr}.contactbox{display:block}.contactbox .button{margin-top:20px}footer{display:block}footer span{display:block;margin:4px 0}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header class="topbar">
+  <a class="logo" href="#home">SAURABH MISHRA<span> / PORTFOLIO</span></a>
+  <nav><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav>
+</header>
+
+<main id="home">
+  <div class="hero">
+    <div>
+      <div class="kicker">Data analytics · MIS reporting · Operations</div>
+      <h1>Making data<br>work <em>smarter.</em></h1>
+      <p class="intro">I’m Saurabh Mishra — a data and operations professional experienced in reporting, data validation, migration and coordination. I use Excel, SQL Server and Power BI to organize information and support better business decisions.</p>
+      <div class="ctas"><a class="button fill" href="#projects">Explore my work ↗</a><a class="button outline" href="mailto:saurabhmishram001@gmail.com">Contact me</a></div>
+    </div>
+    <aside class="hero-side">
+      <div class="initials">SM</div>
+      <h2>Saurabh Mishra</h2>
+      <p>Grading Data Executive · Data Analytics</p>
+      <div class="quickfacts">
+        <div><strong>18</strong><small>Team members led & scheduled</small></div>
+        <div><strong>2 roles</strong><small>Data & operations experience</small></div>
+        <div><strong>Excel</strong><small>Reporting & tracking</small></div>
+        <div><strong>SQL · BI</strong><small>Analytics toolkit</small></div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<section id="about">
+ <div class="heading"><div><div class="kicker">01 / Profile</div><h2>About me</h2></div><p>Professional experience across operational reporting, data quality and research analysis.</p></div>
+ <div class="about">
+  <div class="paper-card"><h3>Accuracy first. Insights next.</h3>
+   <p>I currently work as a Grading Data Executive at Kumon India Education Private Ltd. My work includes digital worksheet evaluation, Excel-based reporting, tracking-error analysis, data-report preparation and coordination with teams to support daily operations.</p><br>
+   <p>Earlier, as a Research Analyst at Sooksm Information Private Ltd., I worked on data migration, data validation, cleaning, mapping, reconciliation and maintaining data integrity. I hold a B.Com degree from Delhi University and completed Data Analyst training at Deep Analytical Eduzone.</p>
+  </div>
+  <div class="mini-list">
+   <div class="mini"><b>MIS & reporting</b><span>Daily, weekly and monthly reporting experience</span></div>
+   <div class="mini"><b>Data quality</b><span>Validation, reconciliation and error identification</span></div>
+   <div class="mini"><b>Team coordination</b><span>Led, mentored and scheduled a team of 18</span></div>
+  </div>
+ </div>
+</section>
+
+<section id="skills">
+ <div class="heading"><div><div class="kicker">02 / Toolkit</div><h2>Technical skills</h2></div><p>Tools and capabilities listed in my resume.</p></div>
+ <div class="skills">
+  <article class="skill"><div class="skillno">TOOL 01</div><h3>Advanced Excel</h3><p>Formulas and functions for data management, tracking, analysis and reporting.</p><div class="pills"><span class="pill">IF / AND / OR</span><span class="pill">IFERROR</span><span class="pill">VLOOKUP</span><span class="pill">HLOOKUP</span><span class="pill">INDEX-MATCH</span><span class="pill">FILTER / SORT</span><span class="pill">UNIQUE</span><span class="pill">COUNTIF</span><span class="pill">SUMIF / SUMIFS</span><span class="pill">TEXT / DATE</span></div></article>
+  <article class="skill"><div class="skillno">TOOL 02</div><h3>Power BI</h3><p>Building reports and dynamic visualizations for daily, weekly and monthly MIS reporting.</p><div class="pills"><span class="pill">Power Query</span><span class="pill">DAX</span><span class="pill">Relationships</span><span class="pill">Measures</span><span class="pill">Calculated Columns</span><span class="pill">Slicers & Filters</span><span class="pill">Drill-through</span><span class="pill">Conditional Formatting</span><span class="pill">Report Automation</span></div></article>
+  <article class="skill"><div class="skillno">TOOL 03</div><h3>SQL Server & PowerPoint</h3><p>SQL Server is included in my technical skill set. PowerPoint for preparing and presenting information.</p><div class="pills"><span class="pill">SQL Server</span><span class="pill">PowerPoint</span></div></article>
+ </div>
+</section>
+
+<section id="projects">
+ <div class="heading"><div><div class="kicker">03 / Selected work</div><h2>Project concepts</h2></div><p>Portfolio-ready project ideas aligned with Excel, SQL and Power BI.</p></div>
+ <div class="projectgrid">
+  <article class="project"><div class="projecttop"><b>01 / EXCEL</b><span>REPORTING</span></div><div class="projectbody"><h3>Sales & MIS Dashboard</h3><p>Explore sales performance, monthly trends, product categories and regional results using Excel reporting tools.</p><div class="pills"><span class="pill">PivotTables</span><span class="pill">Lookups</span><span class="pill">Charts</span><span class="pill">KPIs</span></div><a class="kicker" href="https://github.com/" target="_blank" rel="noreferrer">Add workbook / repository ↗</a></div></article>
+  <article class="project"><div class="projecttop"><b>02 / SQL</b><span>QUERYING</span></div><div class="projectbody"><h3>Customer & Order Analysis</h3><p>Analyze a sample orders database to answer questions about customer activity, revenue, products and order trends.</p><div class="pills"><span class="pill">SQL Server</span><span class="pill">Joins</span><span class="pill">Aggregations</span></div><a class="kicker" href="https://github.com/" target="_blank" rel="noreferrer">Add SQL scripts ↗</a></div></article>
+  <article class="project"><div class="projecttop"><b>03 / POWER BI</b><span>VISUALIZATION</span></div><div class="projectbody"><h3>Business Performance Report</h3><p>Create an interactive report with KPI cards, slicers and visuals to communicate business performance and trends.</p><div class="pills"><span class="pill">Power Query</span><span class="pill">DAX</span><span class="pill">Dashboard</span></div><a class="kicker" href="https://github.com/" target="_blank" rel="noreferrer">Add report link ↗</a></div></article>
+ </div>
+ <div class="disclaimer">These are suggested project concepts, not claims of completed work. Replace them with your own finished projects, screenshots, files and findings before sharing this portfolio with recruiters.</div>
+</section>
+
+<section id="experience">
+ <div class="heading"><div><div class="kicker">04 / Career</div><h2>Experience</h2></div><p>Roles and responsibilities summarized from my resume.</p></div>
+ <div class="experience">
+  <article class="job"><div class="jobhead"><div><div class="kicker">Current role</div><h3>Grading Data Executive</h3><div class="company">Kumon India Education Private Ltd.</div></div><div class="date">JUL 2024 – PRESENT</div></div>
+   <ul><li>Led, mentored and scheduled a cross-functional team of 18 staff members.</li><li>Performed digital worksheet evaluation and Excel-based reporting.</li><li>Maintained and analyzed tracking errors to support accurate data tracking.</li><li>Prepared and maintained data reports and checked migrated-data accuracy and completeness.</li><li>Coordinated with teams to support smooth workflows and minimize operational disruptions.</li></ul>
+  </article>
+  <article class="job"><div class="jobhead"><div><div class="kicker">Previous role</div><h3>Research Analyst</h3><div class="company">Sooksm Information Private Ltd.</div></div><div class="date">JAN 2024 – JUN 2024</div></div>
+   <ul><li>Worked on data migration and data transfer.</li><li>Performed data validation, quality checks and cleaning.</li><li>Handled data mapping and record management.</li><li>Supported data reconciliation and error identification.</li><li>Maintained data integrity and consistency.</li></ul>
+  </article>
+ </div>
+</section>
+
+<section id="education">
+ <div class="heading"><div><div class="kicker">05 / Learning</div><h2>Education & certifications</h2></div></div>
+ <div class="edu">
+  <div class="eduitem"><b>Bachelor of Commerce (B.Com)</b><span>Delhi University · 2022–2025</span></div>
+  <div class="eduitem"><b>Data Analyst</b><span>Deep Analytical Eduzone · 2025–2026</span></div>
+  <div class="eduitem"><b>Class XII · CBSE</b><span>Completed 2022</span></div>
+  <div class="eduitem"><b>Computer Science</b><span>Nice Computers, South Ex · 2023</span></div>
+  <div class="eduitem"><b>Class X · CBSE</b><span>Completed 2020</span></div>
+  <div class="eduitem"><b>Additional tool</b><span>Microsoft PowerPoint</span></div>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="contactbox"><div><div class="kicker" style="color:#dce6ff">06 / Contact</div><h2>Let’s connect.</h2><p>For opportunities, collaboration or a conversation about data and reporting.</p></div><a class="button" href="mailto:saurabhmishram001@gmail.com">saurabhmishram001@gmail.com ↗</a></div>
+</section>
+<footer><span>© <span id="year"></span> Saurabh Mishra</span><span>Analytics portfolio · Hosted with GitHub Pages</span></footer>
+</div>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body>
+</html>
